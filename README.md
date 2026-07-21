@@ -14,32 +14,32 @@ This project demonstrates Docker image optimization using enterprise best practi
 - Image Size Comparison
 - Resource Usage Analysis
 
+#### Docker Build Command 
+
+docker build -f dockerfiles/Dockerfile.basic -t docker-basic .
+
+docker build -f dockerfiles/Dockerfile.multistage -t docker-multistage .
 
 ## Run Containers
 
 ### Root
 
-```bash
 docker run -d -p 3000:3000 docker-root
-```
+
 
 ### Non-root
 
-```bash
+
 docker run -d -p 3001:3000 docker-nonroot
-```
+
 
 ## Resource Monitoring
 
-```bash
+
 docker stats
-```
+
 ---
 
 ## Expected Outcome
 
 - Image size reduction
-- Reduced vulnerabilities
-- Secure container execution
-- Lower memory usage
-- Production-ready Docker images
