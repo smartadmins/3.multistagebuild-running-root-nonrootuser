@@ -14,15 +14,6 @@ This project demonstrates Docker image optimization using enterprise best practi
 - Image Size Comparison
 - Resource Usage Analysis
 
----
-
-## Compare Images
-
-```bash
-./scripts/compare-images.sh
-```
-
----
 
 ## Run Containers
 
