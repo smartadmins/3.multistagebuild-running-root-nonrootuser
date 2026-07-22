@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#mkdir -p reports
+mkdir -p reports
 
 echo "Scanning Basic Image"
 
