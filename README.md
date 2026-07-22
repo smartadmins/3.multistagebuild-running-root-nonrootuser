@@ -49,10 +49,11 @@ docker-security-optimization/
 │   └── Dockerfile.nonroot
 │
 ├── sripts/
+|    |── trivyscan.sh
 |    |── reports
 |       |── trivy-report-basic.txt
 |       |── trivy-report-basic.txt    
-|── trivyscan.sh
+|
 │   
 └── README.md
 ```
