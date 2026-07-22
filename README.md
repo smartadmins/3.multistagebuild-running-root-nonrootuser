@@ -16,21 +16,29 @@ This project demonstrates Docker image optimization using enterprise best practi
 
 #### Docker Build Command 
 docker build -f dockerfiles/Dockerfile.basic -t docker-basic .
+
 docker build -f dockerfiles/Dockerfile.multistage -t docker-multistage .
+
 docker images 
 
 ## Building Images for  root user and non root users
+
 docker build -f dockerfiles/Dockerfile.root -t node-root:v1 .
+
 docker build -f dockerfiles/Dockerfile.nonroot -t node-nonroot:v1 .
  
 
 ## Run Containers As root and non root 
+
 docker run -d --name app-root -p 5001:3000 node-root:v1
+
 docker run -d --name app-nonroot -p 5001:3000 node-nonroot:v1
+
 docker ps
  
 
 ## To verify
+
 docker exec app-root whoami
 
 docker exec app-nonroot whoami
